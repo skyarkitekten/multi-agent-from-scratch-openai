@@ -28,7 +28,7 @@ class AgentBase(ABC):
                     for msg in messages:
                         logger.debug(f"  {msg['role']}: {msg['content']}")
                 response = openai.chat.completions.create(
-                    model="gpt-4",
+                    model="gpt-4o-mini",
                     messages=messages,
                     temperature=temperature,
                     max_tokens=max_tokens,
