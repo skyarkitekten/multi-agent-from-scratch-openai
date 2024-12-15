@@ -1,6 +1,6 @@
 import streamlit as st
 from agents import AgentManager
-from utils.logger import Logger
+from utils.logger import logger
 import os
 from dotenv import load_dotenv
 
